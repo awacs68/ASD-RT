@@ -4,9 +4,6 @@
 
 body{
 	background-color: gray;
-
-	
-    
 }
 
 header,h1 {
@@ -28,16 +25,13 @@ h2 {
 	color: black;
 	line-height: 1.2em;
 	font-weight: 20px;
-	font-family: 32pt:, "Times New Roman;
-	
+	font-size: 32pt;
+	font-family: "Times New Roman", serif;
 }
 
 h1 {
 	color: #7CFC00;
 }
 
-ul li {
-	color: #0000CD;
-}
 
 

@@ -24,41 +24,33 @@
 <!--Css files go here-->
         
 	    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
-      <link rel="stylesheet" href="css/theme/slate.min.css" /> 
-	    <link href="css/style.css" rel="stylesheet" type="text/css" />
-      <link href="css/index-html.css" rel="stylesheet" type="text/css" />
-
-    <!--  is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-        <script src="js/libs/modernizr.custom.min.js"></script>  
-
+      <link href="css/main.css" rel="stylesheet" type="text/css" />
     </head>
 <body>
 <!-- Begin First Page -->
   <section id="form" data-role="page">
    <header data-role="header"><h1>Owner Information</h1></header>
-   <form action="" method="post" id="ownerform">
-    <h1>Customers</h1>
-     <p> * Indicates Required Field </p>
-     <div>
-      <label for="firstname">* First Name:</label>
-      <input type="text" name="firstname" id="firstname" class="required" />
-      <label for="lastname">* Last Name:</label>
-      <input type="text" name="lastname" id="lastname" class="required" />
-      <label for="vehicleyear">* Year of Vehicle:</label>
-      <input type="range" vyear="vehicleyear" id="vehicleyear" class="required" value="1992" min="1970" max="2014" />
-      <label for="make">* Make:</label>
-      <input type="text" name="make" id="make" class="required" />
-      <label for="model">* Model:</label>
-      <input type="text" name="model" id="model" class="required" /></br>
-      <input id="save" name="submit" type="submit" data-theme="e" value="Save" />
-      <input id="submit" name="submit" type="submit" data-theme="e" value="Edit" />
-      <input id="reset" name="reset" type="reset" data-theme="e" value="Delete" />
-     </div> 
-      </form>
-     <footer>
-        <footer data-role="footer"><h1>McAninch Motors</h1></footer>
-     </footer>
-       </section>
+    <form action="" method="post" id="ownerform">
+     <h1>Customers</h1>
+      <p> * Indicates Required Field </p>
+       <div>
+        <label for="firstname">* First Name:</label>
+        <input type="text" name="firstname" id="firstname" class="required" />
+        <label for="lastname">* Last Name:</label>
+        <input type="text" name="lastname" id="lastname" class="required" />
+        <label for="year">* Year of Vehicle:</label>
+        <input type="range" name="year" year="year" id="year" class="required" value="1992" min="1970" max="2014" />
+        <label for="make">* Make:</label>
+        <input type="text" name="make" id="make" class="required" />
+        <label for="model">* Model:</label>
+        <input type="text" name="model" id="model" class="required" /></br>
+        <input id="save" name="submit" type="submit" data-theme="e" value="Save" />
+        <input id="submit" name="submit" type="submit" data-theme="e" value="Edit" />
+        <input id="reset" name="reset" type="reset" data-theme="e" value="Delete" />
+       </div> 
+    </form>
+      <footer data-role="footer"><h1>McAninch Motors</h1></footer>
+  </section>
 
 
   <!-- JavaScript -->
