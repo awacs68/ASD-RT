@@ -22,6 +22,7 @@ $('#form').on('pageinit', function(){
         item.year = ["Year:", $("#year").val()];
         item.make = ["Make:", $("#make").val()];
         item.model = ["Model:", $("#model").val()];
+        item.repairs = ["Repairs:", $("#repairs").val()];
       localStorage.setItem(id, JSON.stringify(item));
   alert("Information Saved!");
  };       
