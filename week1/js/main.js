@@ -27,8 +27,28 @@ $('#form').on('pageinit', function(){
         item.repairs = ["Repairs:", $("#repairs").val()];
       localStorage.setItem(id, JSON.stringify(item));
   alert("Information Saved!");
- };       
+ };
+ });
+
+// Edit Function //
+
+ $('#edit').on('click', function(){
+  if(localStorage.length === 0){
+           alert("There is no data in Local Storage so default data was added.");
+           autoFillData();
+  }
+  for(var i=0, len=localStorage.length; i<len;i++){
+    var key = localStorage.key(i);
+    var value = localStorage.getItem(key);
+    var obj = JSON.parse(val);
+  $('div').appendTo('<label>First Name</label>');
+}
 });
+ 
+// Delete Function //
+
+
+// Static Remote Data //
 
 $('#loaddatapage').on('pageinit', function(){ 
 
@@ -53,6 +73,8 @@ $("#dataloading").empty();
                 '<li>'+ myJson.model +'</li>'+
                 '<li>'+ myJson.repairs +'</li>'
                 ).appendTo('#dataloading');
+              
+              
             };
     }   
      });   
@@ -81,6 +103,10 @@ $("#XML").on('click', function(){
                 '<li>'+ myXml.model +'</li>'+
                 '<li>'+ myXml.repairs +'</li>'
                 ).appendTo('#dataloading');
+              
+             
+              
+
             });
     }   
      });   
