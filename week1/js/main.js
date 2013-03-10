@@ -27,21 +27,20 @@ $('#form').on('pageinit', function(){
         item.repairs = ["Repairs:", $("#repairs").val()];
       localStorage.setItem(id, JSON.stringify(item));
   alert("Information Saved!");
-<<<<<<< HEAD
  };
  });
 
 // Edit Function //
 
- $('#edit').on('click', function(){
+ $('#edit').on('click', function(localStorage){
   if(localStorage.length === 0){
            alert("There is no data in Local Storage so default data was added.");
-           autoFillData();
+          
   }
   for(var i=0, len=localStorage.length; i<len;i++){
     var key = localStorage.key(i);
     var value = localStorage.getItem(key);
-    var obj = JSON.parse(val);
+    var obj = JSON.parse(value);
   $('div').appendTo('<label>First Name</label>');
 }
 });
@@ -50,10 +49,8 @@ $('#form').on('pageinit', function(){
 
 
 // Static Remote Data //
-=======
- };       
-});
->>>>>>> gh-pages
+
+
 
 $('#loaddatapage').on('pageinit', function(){ 
 
@@ -78,15 +75,13 @@ $("#dataloading").empty();
                 '<li>'+ myJson.model +'</li>'+
                 '<li>'+ myJson.repairs +'</li>'
                 ).appendTo('#dataloading');
-<<<<<<< HEAD
-              
-              
-=======
->>>>>>> gh-pages
             };
     }   
      });   
-        }); 
+        });
+
+// XML Function //
+
 $("#XML").on('click', function(){
   $("#dataloading").empty();
   $.ajax({
@@ -111,13 +106,6 @@ $("#XML").on('click', function(){
                 '<li>'+ myXml.model +'</li>'+
                 '<li>'+ myXml.repairs +'</li>'
                 ).appendTo('#dataloading');
-<<<<<<< HEAD
-              
-             
-              
-
-=======
->>>>>>> gh-pages
             });
     }   
      });   
