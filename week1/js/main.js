@@ -27,6 +27,7 @@ $('#form').on('pageinit', function(){
         item.repairs = ["Repairs:", $("#repairs").val()];
       localStorage.setItem(id, JSON.stringify(item));
   alert("Information Saved!");
+<<<<<<< HEAD
  };
  });
 
@@ -49,6 +50,10 @@ $('#form').on('pageinit', function(){
 
 
 // Static Remote Data //
+=======
+ };       
+});
+>>>>>>> gh-pages
 
 $('#loaddatapage').on('pageinit', function(){ 
 
@@ -73,8 +78,11 @@ $("#dataloading").empty();
                 '<li>'+ myJson.model +'</li>'+
                 '<li>'+ myJson.repairs +'</li>'
                 ).appendTo('#dataloading');
+<<<<<<< HEAD
               
               
+=======
+>>>>>>> gh-pages
             };
     }   
      });   
@@ -103,10 +111,13 @@ $("#XML").on('click', function(){
                 '<li>'+ myXml.model +'</li>'+
                 '<li>'+ myXml.repairs +'</li>'
                 ).appendTo('#dataloading');
+<<<<<<< HEAD
               
              
               
 
+=======
+>>>>>>> gh-pages
             });
     }   
      });   
