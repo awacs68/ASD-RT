@@ -32,17 +32,9 @@ $('#form').on('pageinit', function(){
 
 // Edit Function //
 
- $('#edit').on('click', function(localStorage){
-  if(localStorage.length === 0){
-           alert("There is no data in Local Storage so default data was added.");
-          
-  }
-  for(var i=0, len=localStorage.length; i<len;i++){
-    var key = localStorage.key(i);
-    var value = localStorage.getItem(key);
-    var obj = JSON.parse(value);
-  $('div').appendTo('<label>First Name</label>');
-}
+ $('#edit').on('click', function(){
+  $('div').appendTo('label');
+  alert("Are you sure you want to edit the form?");
 });
  
 // Delete Function //
